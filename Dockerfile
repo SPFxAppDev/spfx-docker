@@ -21,6 +21,6 @@ RUN apk add sudo && \
 
 USER spfx
 
-RUN npm i -g gulp@4 yo @microsoft/generator-sharepoint@1.13.1 spfx-fast-serve
+RUN npm i -g gulp@4 yo @microsoft/generator-sharepoint@1.14.0 spfx-fast-serve
 
 CMD /bin/ash
