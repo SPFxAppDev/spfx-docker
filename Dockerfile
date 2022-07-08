@@ -1,7 +1,7 @@
-#FROM node:14.18.0
-FROM node:14.19.0-alpine3.15
+#FROM node:16.15.1
+FROM node:16.15.1-alpine3.15
 
-EXPOSE 5432 4321 35729
+EXPOSE 4321 35729
 
 ENV NPM_CONFIG_PREFIX=/usr/app/.npm-global \
   PATH=$PATH:/usr/app/.npm-global/bin
@@ -21,6 +21,6 @@ RUN apk add sudo && \
 
 USER spfx
 
-RUN npm i -g gulp@4 yo @microsoft/generator-sharepoint@1.14.0 spfx-fast-serve
+RUN npm i -g gulp@4 yo @microsoft/generator-sharepoint@1.15.0 spfx-fast-serve
 
 CMD /bin/ash

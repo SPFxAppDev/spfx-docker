@@ -32,7 +32,7 @@ All files scaffolded by the generator will be stored in your project directory o
 ## Serve
 If you run `gulp serve` or `npm run serve` (provided it has been deployed, see chapter SPFx Fast Serve), your component will not be displayed (in SharePoint). The reason is, that the certificate is not trusted. It does not matter if you have already run `gulp trust-dev-cert` on your local environment or if you did it in the container. To view the SPFx component, you must go to the URL `https://localhost:4321` (on the local environment). After that, you have to trust the certificate.
 
-## SPFx Fast Serve
+## SPFx Fast Serve and SPFx < v1.14.0
 To use the npm package [spfx-fast-serve](https://github.com/s-KaiNet/spfx-fast-serve) in your container, you just have to open `fast-serve/webpack.extend.js` and adjust the constant `webpackConfig`:
 
 
